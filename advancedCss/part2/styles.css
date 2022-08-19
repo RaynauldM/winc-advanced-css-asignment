@@ -1,0 +1,57 @@
+body {
+  background-color: #c3cfe2;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2em;
+  justify-content: space-between;
+}
+.container .element-container {
+  position: relative;
+  width: 30%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.container .element-container .element {
+  width: 100%;
+  transition: opacity 1.5s ease-in-out;
+}
+.container .element-container .btn {
+  width: 10em;
+  height: 6em;
+  position: absolute;
+  bottom: 45%;
+  left: 35%;
+  box-shadow: 0 6px 10px rgb(58, 56, 56);
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+.container .element-container:hover {
+  background-color: rgb(81, 72, 72);
+}
+.container .element-container:hover .element {
+  opacity: 0;
+}
+.container .element-container:hover .btn {
+  opacity: 1;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    flex-flow: row wrap;
+  }
+  .container .element-container {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .container {
+    flex-flow: column nowrap;
+  }
+  .container .element-container {
+    width: 90%;
+  }
+}/*# sourceMappingURL=styles.css.map */

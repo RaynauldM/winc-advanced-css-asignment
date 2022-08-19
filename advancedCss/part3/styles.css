@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #c3cfe2;
+}
+
+i {
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  margin-top: 50vh;
+}
+.container > * {
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .blog {
+  background-color: #e17b77;
+}
+.container .blog:hover {
+  width: 8rem;
+  transition: all ease-in-out 0.5s;
+  justify-content: space-around;
+}
+.container .blog:hover::after {
+  content: "Blog";
+  color: #fff;
+  text-decoration: underline;
+}
+.container .facebook {
+  background-color: #3b5998;
+}
+.container .facebook:hover {
+  width: 8rem;
+  transition: all ease-in-out 0.5s;
+  justify-content: space-around;
+}
+.container .facebook:hover::after {
+  content: "Facebook";
+  color: #fff;
+  text-decoration: underline;
+}
+.container .twitter {
+  background-color: #00aced;
+}
+.container .twitter:hover {
+  width: 8rem;
+  transition: all ease-in-out 0.5s;
+  justify-content: space-around;
+}
+.container .twitter:hover::after {
+  content: "Twitter";
+  color: #fff;
+  text-decoration: underline;
+}
+.container .github {
+  background-color: #333;
+}
+.container .github:hover {
+  width: 8rem;
+  transition: all ease-in-out 0.5s;
+  justify-content: space-around;
+}
+.container .github:hover::after {
+  content: "Github";
+  color: #fff;
+  text-decoration: underline;
+}
+.container .linkedin {
+  background-color: #007bb6;
+}
+.container .linkedin:hover {
+  width: 8rem;
+  transition: all ease-in-out 0.5s;
+  justify-content: space-around;
+}
+.container .linkedin:hover::after {
+  content: "Linkedin";
+  color: #fff;
+  text-decoration: underline;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,94 @@
+font-face {
+  font-family: "roboto";
+  src: url("/Roboto-Medium.ttf");
+}
+
+p,
+h2,
+h3 {
+  font-family: "roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c3cfe2;
+}
+
+.container {
+  background-color: #686de0;
+  margin-top: 6vh;
+  margin-left: 40vw;
+  width: 30%;
+  height: 85vh;
+  border-radius: 20px;
+  box-shadow: 0 6px 10px rgb(58, 56, 56);
+  display: flex;
+  flex-flow: column nowrap;
+}
+.container .text-container {
+  background-color: #fff;
+  height: 70%;
+  padding: 2em 2em 0 2em;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+.container .text-container p {
+  color: rgb(96, 89, 89);
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.05vh;
+  line-height: 1.8em;
+  letter-spacing: 0.15em;
+}
+.container .stock-container {
+  width: 11em;
+  height: 11em;
+  position: relative;
+  bottom: 5.5rem;
+  margin-inline: auto;
+}
+.container .stock-container img {
+  width: 100%;
+  height: 100%;
+  border: 6px #fff solid;
+  border-radius: 50%;
+}
+.container .bottom-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .bottom-container .name {
+  color: white;
+  letter-spacing: 0.25em;
+  position: relative;
+  bottom: 3em;
+}
+.container .bottom-container .website {
+  color: rgb(219, 190, 190);
+  position: relative;
+  bottom: 3em;
+  font-size: 1.3em;
+  letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 1247px), (max-height: 600px) {
+  .container {
+    width: 350px;
+    margin-left: 20vw;
+    display: block;
+  }
+  .container .text-container {
+    height: auto;
+  }
+  .container img {
+    display: none;
+  }
+  .container .name {
+    text-align: center;
+  }
+}/*# sourceMappingURL=styles.css.map */

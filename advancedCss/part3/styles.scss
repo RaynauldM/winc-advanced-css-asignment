@@ -1,0 +1,52 @@
+@import "../__imports";
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: $body-background;
+}
+
+i {
+  color: $white;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  margin-top: 50vh;
+
+  & > * {
+    width: 3rem;
+    height: 3rem;
+    overflow: hidden;
+    @include center-icon();
+  }
+
+  .blog {
+    background-color: #e17b77;
+    @include hover("Blog");
+  }
+
+  .facebook {
+    background-color: #3b5998;
+    @include hover("Facebook");
+  }
+
+  .twitter {
+    background-color: #00aced;
+    @include hover("Twitter");
+  }
+
+  .github {
+    background-color: #333;
+    @include hover("Github");
+  }
+
+  .linkedin {
+    background-color: #007bb6;
+    @include hover("Linkedin");
+  }
+}

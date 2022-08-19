@@ -1,0 +1,72 @@
+@import "../__imports";
+
+@mixin opacity-change($how-long) {
+  transition: opacity $how-long ease-in-out;
+}
+
+body {
+  background-color: $body-background;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2em;
+  justify-content: space-between;
+
+  .element-container {
+    position: relative;
+    width: 30%;
+    border-radius: $border-radius;
+    overflow: hidden;
+
+    .element {
+      width: 100%;
+      @include opacity-change(1.5s);
+    }
+
+    .btn {
+      width: 10em;
+      height: 6em;
+      position: absolute;
+      bottom: 45%;
+      left: 35%;
+      box-shadow: $box-shadow;
+      opacity: 0;
+      @include opacity-change(2s);
+    }
+
+    &:hover {
+      background-color: rgb(81, 72, 72);
+
+      .element {
+        opacity: 0;
+      }
+
+      .btn {
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    flex-flow: row wrap;
+
+    .element-container {
+      width: 45%;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    flex-flow: column nowrap;
+
+    .element-container {
+      width: 90%;
+    }
+  }
+}
